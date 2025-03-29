@@ -14,6 +14,9 @@ mongoose
 const usersRouter = require("./routers/users");
 app.use("/users", usersRouter);
 
+const productsRouter = require("./routers/products");
+app.use("/products", productsRouter);
+
 app.listen(9000, () => {
   console.log("Server started");
 });
