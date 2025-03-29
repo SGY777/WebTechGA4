@@ -1,0 +1,24 @@
+{
+  "name": "webtechga4",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SGY777/WebTechGA4.git"
+  },
+  "author": "GuyuShi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SGY777/WebTechGA4/issues"
+  },
+  "homepage": "https://github.com/SGY777/WebTechGA4#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.1"
+  }
+}
