@@ -21,6 +21,9 @@ app.use("/products", productsRouter);
 const commentsRouter = require("./routers/comments");
 app.use("/comments", commentsRouter);
 
+const ordersRouter = require("./routers/orders");
+app.use("/orders", ordersRouter);
+
 app.listen(9000, () => {
   console.log("Server started");
 });
