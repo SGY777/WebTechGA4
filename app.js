@@ -1,3 +1,4 @@
+
 const express = require("express");
 const mongoose = require("mongoose");
 const url =
@@ -16,6 +17,9 @@ app.use("/users", usersRouter);
 
 const productsRouter = require("./routers/products");
 app.use("/products", productsRouter);
+
+const commentsRouter = require("./routers/comments");
+app.use("/comments", commentsRouter);
 
 app.listen(9000, () => {
   console.log("Server started");
