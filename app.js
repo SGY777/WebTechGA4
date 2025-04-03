@@ -6,7 +6,7 @@ const url =
 
 const app = express();
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }));
 mongoose
   .connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB Atlas"))
@@ -24,6 +24,10 @@ app.use("/comments", commentsRouter);
 const ordersRouter = require("./routers/orders");
 app.use("/orders", ordersRouter);
 
+const cartRouter = require('./routers/cart.js');
+app.use('/cart', cartRouter);
+
 app.listen(9000, () => {
   console.log("Server started");
+  console.log("app listening on port localhost:9000");
 });
